@@ -10,6 +10,8 @@ rancher:
         PUID: 1020
         VERSION: latest
       net: host
+      ports:
+      - 32400:32400
       volumes:
       - /mnt/nfs-1/config/plex:/config
       - /mnt/nfs-1/config/plex/transcode:/transcode
