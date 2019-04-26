@@ -2,16 +2,15 @@ rancher:
   services:
     plex:
       image: linuxserver/plex
-      hostname: plex
+      hostname: pms
       restart: always
       environment:
         PGID: 1020
         PUID: 1020
         TZ: America/New_York
+        PLEX_CLAIM: claim-W6PYyc7Hpt1dsNFN4Mzy
         VERSION: latest
       net: host
-      ports:
-      - 32400:32400
       volumes:
       - /mnt/nfs-1/config/plex:/config
       - /mnt/nfs-1/config/plex/transcode:/transcode
