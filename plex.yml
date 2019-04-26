@@ -5,9 +5,9 @@ rancher:
       hostname: plex
       restart: always
       environment:
-        TZ: America/New_York
         PGID: 1020
         PUID: 1020
+        TZ: America/New_York
         VERSION: latest
       net: host
       ports:
