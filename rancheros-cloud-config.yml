@@ -27,4 +27,4 @@ rancher:
       environment:
         SERVER: 192.168.1.10
         SHARE: /mnt/MediaVolume/rancher
-        SHARE: /mnt/MediaVolume/Media/NFSTest
+        SHARE: /mnt/MediaVolume/Media
