@@ -23,6 +23,8 @@ rancher:
       volumes:
       - /usr/bin/iptables:/sbin/iptables:ro
       - /mnt/nfs-1:/mnt/nfs-1:shared
+      - /mnt/nfs-2:/mnt/nfs-2:shared
       environment:
         SERVER: 192.168.1.10
         SHARE: /mnt/MediaVolume/rancher
+        SHARE: /mnt/MediaVolume/Media
