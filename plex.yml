@@ -8,11 +8,11 @@ rancher:
         PGID: 1020
         PUID: 1020
         TZ: America/New_York
-        PLEX_CLAIM: claim-*CODE* "https://www.plex.tv/claim/"
+        PLEX_CLAIM: claim-*CODE* #https://www.plex.tv/claim/
         VERSION: latest
       net: host
       volumes:
       - /mnt/nfs-1/config/plex:/config
       - /mnt/nfs-1/config/plex/transcode:/transcode
-      - /mnt/nfs-1/Movies:/data/movies
-      - /mnt/nfs-1/TV Shows:/data/tv
+      - /mnt/nfs-2/Movies:/data/movies
+      - /mnt/nfs-2/"TV Shows":/data/tv
