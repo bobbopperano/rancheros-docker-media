@@ -8,7 +8,7 @@ rancher:
         PGID: 1020
         PUID: 1020
         TZ: America/New_York
-        PLEX_CLAIM: claim-pbZjz4x3YyupBMHUdJTt
+        PLEX_CLAIM: claim-eNEhKgCnJQ7ByzDhNz9L
         VERSION: latest
       net: host
       volumes:
