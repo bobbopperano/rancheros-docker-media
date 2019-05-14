@@ -22,10 +22,10 @@ rancher:
       restart: always
       volumes:
       - /usr/bin/iptables:/sbin/iptables:ro
-      - /mnt/nfs-1:/mnt/nfs-1:shared
+      - /mnt/nfs:/mnt/nfs-1:shared
       environment:
         SERVER: 192.168.1.10
-        SHARE: /mnt/MediaVolume/rancher
+        SHARE: /mnt/MediaVolume/docker
 
 runcmd:
 - mount -t nfs 192.168.1.10:/mnt/MediaVolume/Media /mnt/nfs-2
