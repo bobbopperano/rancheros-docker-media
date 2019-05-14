@@ -26,6 +26,3 @@ rancher:
       environment:
         SERVER: 192.168.1.10
         SHARE: /mnt/MediaVolume/docker
-        
-runcmd:
-- mount -t nfs 192.168.1.10:/mnt/MediaVolume/Media /mnt/nfs-2
