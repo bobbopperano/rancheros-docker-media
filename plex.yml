@@ -5,10 +5,10 @@ rancher:
       hostname: pms
       restart: always
       environment:
-        PGID: 1000
-        PUID: 1000
+        PGID: 1020
+        PUID: 1020
         TZ: America/New_York
-        PLEX_CLAIM: claim-sVFnDGVEAPyVQoVgAj5o
+        PLEX_CLAIM: claim-rqUeQyaR9D8yqYeWU7pH
         VERSION: latest
       net: host
       volumes:
