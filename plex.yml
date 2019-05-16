@@ -8,11 +8,10 @@ rancher:
         PGID: 1020
         PUID: 1020
         TZ: America/New_York
-        CLAIM: claim-39xxATFskMhYiAptwTrD
         VERSION: latest
       net: host
       volumes:
       - /mnt/nfs-1/config/plex:/config
       - /mnt/nfs-1/config/plex/transcode:/transcode
-      - /mnt/nfs-1/Movies:/data/movies
-      - /mnt/nfs-1/TV:/data/tv
+      - /mnt/nfs-2/Movies:/data/movies
+      - /mnt/nfs-2/TV:/data/tv
