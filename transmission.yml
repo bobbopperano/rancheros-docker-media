@@ -7,7 +7,7 @@ rancher:
       environment:
         PGID: 1020
         PUID: 1020
-        TZ: Europe/Stockholm
+        TZ: America/New_York
       ports:
       - 9091:9091
       - 51413:51413
@@ -15,6 +15,6 @@ rancher:
       volumes:
       - /mnt/nfs-1/config/transmission:/config
       - /mnt/nfs-1/config/transmission/watch:/watch
-      - /mnt/nfs-1/Downloads:/data/downloads
-      - /mnt/nfs-1/Movies:/data/movies
-      - /mnt/nfs-1/TV:/data/tv
+      - /mnt/nfs-2/Downloads:/data/downloads
+      - /mnt/nfs-2/Movies:/data/movies
+      - /mnt/nfs-2/TV:/data/tv
