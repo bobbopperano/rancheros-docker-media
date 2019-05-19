@@ -15,8 +15,8 @@ rancher:
       - 51414:51413
       - 51414:51413/udp
       volumes:
-      - /mnt/nfs-1/config/transmission1:/config
-      - /mnt/nfs-1/config/transmission1/watch:/watch
+      - /mnt/nfs-1/config/transmission:/config
+      - /mnt/nfs-1/config/transmission/watch:/watch
       - /mnt/nfs-2/Downloads:/data/downloads
       - /mnt/nfs-2/Movies:/data/movies
       - /mnt/nfs-2/TV:/data/tv
