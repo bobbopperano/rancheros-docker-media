@@ -7,11 +7,8 @@ rancher:
       environment:
         PGID: 1020
         PUID: 1020
-        UMASK_SET: 022
         TZ: America/New_York
       net: host
       volumes:
       - /mnt/nfs-1/config/deluge:/config
       - /mnt/nfs-1/Downloads:/data/downloads
-      - /mnt/nfs-1/Movies:/data/movies
-      - /mnt/nfs-1/TV:/data/tv
