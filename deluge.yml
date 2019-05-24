@@ -5,10 +5,10 @@ rancher:
       container_name: deluge
       restart: always
       environment:
-      - PUID: 1020
-      - PGID: 1020
-      - UMASK_SET: 022
-      - TZ: America/New_York
+        PGID: 1020
+        PUID: 1020
+        UMASK_SET: 022
+        TZ: America/New_York
       net: host
       volumes:
       - /mnt/nfs-1/config/deluge:/config
