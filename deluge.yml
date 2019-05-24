@@ -1,0 +1,17 @@
+rancher:
+  services:
+    deluge:
+      image: linuxserver/deluge
+      container_name: deluge
+      restart: always
+      environment:
+      - PUID: 1020
+      - PGID: 1020
+      - UMASK_SET: 022
+      - TZ: America/New_York
+      net: host
+      volumes:
+      - /mnt/nfs-1/config/deluge:/config
+      - /mnt/nfs-1/Downloads:/data/downloads
+      - /mnt/nfs-1/Movies:/data/movies
+      - /mnt/nfs-1/TV:/data/tv
