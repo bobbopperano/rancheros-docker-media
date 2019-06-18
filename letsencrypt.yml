@@ -12,7 +12,7 @@ rancher:
       environment:
         PUID: 1020
         PGID: 1020
-        TZ: Europe/Stockholm
+        TZ: America/New_York
         URL: duckdns.org
         SUBDOMAINS: fruit-nextcloud
         VALIDATION: http
