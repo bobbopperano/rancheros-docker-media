@@ -1,0 +1,15 @@
+rancher:
+  services:
+    nginx:
+      image: linuxserver/nginx
+      container_name: nginx
+      restart: always
+      environment:
+        PUID: 1020
+        PGID: 1020
+        TZ: America/New_York
+      ports:
+      - 80:80
+      - 443:443
+      volumes:
+      - /mnt/nfs-1/config/nginx:/config
