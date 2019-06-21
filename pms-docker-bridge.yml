@@ -1,0 +1,29 @@
+rancher:
+  services:
+    plex:
+      container_name: plex2
+      image: plexinc/pms-docker
+      restart: unless-stopped
+      ports:
+        - 32400:32400/tcp
+        - 3005:3005/tcp
+        - 8324:8324/tcp
+        - 32469:32469/tcp
+        - 1900:1900/udp
+        - 32410:32410/udp
+        - 32412:32412/udp
+        - 32413:32413/udp
+        - 32414:32414/udp
+      environment:
+        PGID: 1020
+        PUID: 1020
+        TZ: America/New_York
+        ADVERTISE_IP: http://172.17.0.12:32400/
+        VERSION: latest
+      hostname: PlexServer
+      volumes:
+        - /mnt/nfs-1/config/plex2:/config
+        - /mnt/nfs-1/config/plex2/transcode:/transcode
+        - /mnt/nfs-1/Movies:/data/movies
+        - /mnt/nfs-1/TV:/data/tv
+        - /mnt/nfs-1/Concerts:/data/concerts
